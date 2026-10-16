@@ -1,0 +1,87 @@
+Body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #e5e7e5;
+        color: #333;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #b19f65;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header a {
+    color: #fbfffb;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header a:hover {
+    color: rgb(102, 77, 39);
+}
+.contenedor {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.badge-v1 {
+    display: inline-block;
+    background-color: #feebc8;
+    color: #c05621;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+button{
+    background-color: #b47c4f;
+    color:#feebc8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+
+    main, section, article {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}

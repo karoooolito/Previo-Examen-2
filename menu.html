@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #f1ebeb;
+            background-color: #491010;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+        }
+
+        hr {
+            margin: 0 0 16px;
+        }
+
+        .lista-menu {
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .badge-v1 {
+            display: inline-block;
+            background-color: #f0eded;
+            color: #911612;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .badge-v1:hover {
+            background-color: #8b2424;
+            color: #ffffff;
+        }
+
+        .badge-v1 a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .badge-v1 img {
+            width: 64px;
+            height: auto;
+        }
+
+@media (min-aspect-ratio: 1/1) {
+    body {
+        display: flex;
+        flex-direction: column;     
+        align-items: stretch;
+        gap: 6px;
+        padding: 8px 12px;
+        overflow: hidden;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    hr {
+        display: block;      
+        width: 100%;
+        margin: 0;
+    }
+
+    .lista-menu {
+        flex: 1;
+        min-height: 0;
+        min-width: 0;
+        flex-direction: row;
+        align-items: stretch;
+        overflow-x: auto;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .badge-v1 {
+        flex: 0 0 auto;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .badge-v1 a {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .badge-v1 img {
+        width: 40px;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <hr>
+
+    <div class="lista-menu">
+        <div class="badge-v1">
+            <a href="pag1.html" target="contenido">
+                <img src="imagenes/procedimiento.png" alt="">
+                Procedimiento
+            </a>
+        </div>
+        <div class="badge-v1">
+            <a href="pag2.html" target="contenido">
+                <img src="imagenes/requi.png" alt="">
+                Requisitos
+            </a>
+        </div>
+    </div>
+</body>
+</html>
