@@ -103,6 +103,22 @@
         margin: 0;
     }
 
+    .lista-menu {
+        flex: 1;
+        min-height: 0;
+        min-width: 0;
+        flex-direction: row;
+        align-items: stretch;
+        overflow-x: auto;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .titulo-menu {
+        margin: 0;
+        gap: 6px;
+    }
+
     .img-titulo {
         width: 20px;
     }
@@ -125,7 +141,7 @@
     </style>
 </head>
 <body>
-    <h1>Menu</h1><img src="imagenes/logo.png" width="50px">
+    <h1>Menu</h1><img src="imagenes/logo.png" alt="" class="img-titulo">
     <hr>
 
     <div class="lista-menu">
