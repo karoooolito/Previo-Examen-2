@@ -28,7 +28,22 @@
         h1 {
             margin: 0 0 10px;
         }
+        .titulo-menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 10px;
+        }
 
+    .titulo-menu h1 {
+        margin: 0;
+    }
+
+.img-titulo {
+    width: 32px;
+    height: auto;
+    opacity: 0.6; 
+}
         hr {
             margin: 0 0 16px;
         }
@@ -99,6 +114,14 @@
         -webkit-overflow-scrolling: touch;
     }
 
+    .titulo-menu {
+        margin: 0;
+        gap: 6px;
+    }
+
+    .img-titulo {
+        width: 20px;
+    }
     .badge-v1 {
         flex: 0 0 auto;
         padding: 0.4rem 0.8rem;
@@ -118,7 +141,7 @@
     </style>
 </head>
 <body>
-    <h1>Menu</h1>
+    <h1>Menu</h1><img src="imagenes/logo.png" alt="" class="img-titulo">
     <hr>
 
     <div class="lista-menu">
